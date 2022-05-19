@@ -1,0 +1,23 @@
+.about .card__expo {
+  margin-top: 20px;
+}
+
+.about .card__expo {
+  display: flex;
+  gap: 16px;
+  background-color: var(--color-background);
+  border-radius: 15px;
+  overflow: hidden;
+  align-items: center;
+}
+
+.about .card__expo .text {
+  padding: 15px;
+  text-align: justify;
+}
+
+@media (max-width: 750px) {
+  .about .card__expo {
+    flex-direction: column;
+  }
+}

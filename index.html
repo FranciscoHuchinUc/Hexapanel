@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./public/favicon.ico" type="image/x-icon">
+
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles/Global.css">
+  <link rel="stylesheet" href="./styles/Header.css">
+  <link rel="stylesheet" href="./styles/Home.css">
+  <link rel="stylesheet" href="./styles/About.css">
+  <link rel="stylesheet" href="./styles/Form.css">
+  <link rel="stylesheet" href="./styles/Footer.css">
+
+  <title>Hexapanel</title>
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar">
+      <a href="#" class='logo'>
+        <img src="./public/images/hexapanel.png" alt="Logo de hexpanel" />
+      </a>
+      <input type="checkbox" id='toggler' />
+      <label for="toggler"><i class="ri-menu-line"></i></label>
+      <div class="menu">
+        <ul class='list'>
+          <li><a href="#home">Inicio</a> </li>
+          <li><a href="#about">Acerca De</a></li>
+          <li><a href="#products">Productos</a></li>
+          <li><a href="#services">Servicos</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class='section home' id='home'>
+      <div class="separate">
+        <div class="image">
+          <img src="./public/images/Home.png" alt="Logo de hexpanel" />
+        </div>
+        <div class="content">
+          <h1>Hexapanel</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore officiis quae exercitationem consequatur
+            voluptatibus eveniet molestias aut, recusandae veniam, mollitia alias. Ab nesciunt dolorum totam, voluptatem
+            in nulla quae reprehenderit.
+          </p>
+          <a href='#about' class="button noselect">
+            <span class="text">Explorar</span>
+            <span class="icon">
+              <i class="ri-arrow-right-s-line"></i>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class='section about' id='about'>
+      <span id="presentation"></span>
+      <article class='presentation'>
+        <h2 class="section__title">Sobre Nosotros</h2>
+        <div class="card__expo">
+          <picture>
+            <source srcset="./public/images/Expo425.jpg" media="(max-width: 768px)">
+            <img src="./public/images/Expo425.jpg" alt="">
+          </picture>
+          <dxiv class="text">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore officiis quae exercitationem
+              consequatur voluptatibus eveniet molestias aut, recusandae veniam, mollitia alias. Ab nesciunt dolorum
+              totam, voluptatem in nulla quae reprehenderit.
+            </p>
+            </p>
+          </dxiv>
+        </div>
+        <div class="data"></div>
+      </article>
+    </section>
+    <section class="section contact" id="contact">
+      <div class="social">
+        <a href="https://www.facebook.com/Hexapanel-105799078679983/" target="_blank" class="facebook">
+          <i class="ri-facebook-fill"></i> <p>Facebook</p>
+        </a>
+        <a href="https://www.instagram.com/hexapanel/" target="_blank" class="instagram">
+          <i class="ri-instagram-fill"></i> <p>Instagram</p>
+        </a>
+        <a href="https://twitter.com/Hexapanel" target="_blank" class="twitter">
+          <i class="ri-twitter-fill"></i> <p>Twitter</p>
+        </a>
+      </div>
+      <div class="formulario">
+        <form class='form' autocomplete='off'>
+          <label for="" class='label'>
+            Nombre
+            <input type="text" name="name" id="name" placeholder="Nombre" />
+          </label>
+          <label for="" class='label'>
+            Email
+            <input type="email" name="email" id="email" placeholder="Email" />
+          </label>
+          <label for="" class='label'>
+            Mensaje
+            <textarea name="message" id="message" placeholder="Mensaje" rows="8"></textarea>
+          </label>
+          <button type="submit" class='btnSend'>Enviar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site footer -->
+  <footer class="footer">
+    <div class="container__footer">
+      <div class="about__footer">
+        <h2 class="subtitle__footer">Detalles del Producto</h2>
+        <p class="text__footer">
+          HANIL KUXTAL <br>
+          Paquete de 5 Piezas <br>
+          Paneles hexagonales para jardineria vertical
+        </p>
+      </div>
+
+      <div class="location__footer">
+        <h2 class="subtitle__footer">Ubicación</h2>
+        <p class="text__footer">
+          Calle 21 67, San Pastor 24900 Dzitbalche,Campeche <br>
+          Clave: 7 50,México.
+        </p>
+      </div>
+
+      <div class="copyright__footer">
+        <hr>
+        <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by <a href="#">Scanfcode</a>. </p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src='./js/typing.js'></script>
+
+</html>
